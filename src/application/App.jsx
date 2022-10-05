@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Wrapper } from './StyeledComponents';
 import Section from './feedbackWidget/section/Section';
 import FeedbackOptions from './feedbackWidget/feedbackOptions/FeedbackOptions';
@@ -60,3 +61,19 @@ export const App = () => {
     </Wrapper>
   );
 };
+
+App.propTypes = {
+  bad: PropTypes.number,
+  good: PropTypes.number,
+  total: PropTypes.number,
+  setBad: PropTypes.func,
+  setGood: PropTypes.func,
+  neutral: PropTypes.number,
+  message: PropTypes.string,
+  component: PropTypes.element,
+  setNeutral: PropTypes.func,
+  onLeaveFeedback: PropTypes.func,
+  countTotalFeedback: PropTypes.func,
+  positivePercentage: PropTypes.number,
+  countPositiveFeedbackPercentage: PropTypes.func,
+}

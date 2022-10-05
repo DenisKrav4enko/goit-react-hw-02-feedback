@@ -7,7 +7,6 @@ import {
   ItemContainer,
   StatsContainer,
 } from './StyledComponents';
-import FeedbackOptions from '../feedbackOptions/FeedbackOptions';
 
 const Statistics = props => {
   const {
@@ -57,11 +56,15 @@ const Statistics = props => {
 }
 
 Statistics.propTypes = {
+  id: PropTypes.number,
   bad: PropTypes.number,
+  item: PropTypes.object,
   good: PropTypes.number,
+  title: PropTypes.string,
+  label: PropTypes.string,
   total: PropTypes.number,
   neutral: PropTypes.number,
-  options: PropTypes.array,
+  options: PropTypes.array.isRequired,
   positivePercentage: PropTypes.number,
 };
 
