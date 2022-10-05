@@ -34,7 +34,7 @@ FeedbackOptions.propTypes = {
   item: PropTypes.object,
   label: PropTypes.string,
   title: PropTypes.string,
-  options: PropTypes.array,
+  options: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func,
 };
 

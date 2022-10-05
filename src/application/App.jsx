@@ -67,6 +67,7 @@ App.propTypes = {
   good: PropTypes.number,
   total: PropTypes.number,
   setBad: PropTypes.func,
+  options: PropTypes.array,
   setGood: PropTypes.func,
   neutral: PropTypes.number,
   message: PropTypes.string,
